@@ -20,7 +20,28 @@ Tugas besar ini bertujuan untuk merancang dan mengimplementasikan sebuah sistem 
 3. Menggunakan Finite State Machine tipe Mealy
 4. Output berupa sinyal logika 1 saat pola “001” atau “101” terdeteksi, dan 0 jika tidak terdeteksi
 # Cara Penggunaan
+<img width="436" height="732" alt="fpgatb drawio" src="https://github.com/user-attachments/assets/aa402961-992a-4836-a490-ac21e2e22c8e" />
+Flowchart menggambarkan alur kerja sistem pendeteksi pola bit 3-bit (001 dan 101) berbasis FSM Mealy. Sistem membaca input bit serial secara kontinu, memproses setiap bit untuk menentukan transisi state, dan menghasilkan output logika 1 ketika salah satu pola terdeteksi. Proses overlapping diterapkan sehingga bit sebelumnya dapat digunakan kembali untuk deteksi selanjutnya, dan sistem berjalan terus selama clock aktif. 
+
+## Blok Diagram
+![blok dd](https://github.com/user-attachments/assets/76b46c2c-52d5-426f-bd18-2d617bb0037b)
+
+Blok diagram tersebut menggambarkan implementasi sistem pendeteksi urutan sequence detector pada perangkat keras FPGA, di mana data biner diterima bit demi bit melalui input dan diproses oleh logika state machine internal modul double detection 3-bit. FPGA bertugas memantau aliran data ini secara real-time menggunakan register internalnya, dan ketika rangkaian bit yang masuk cocok dengan pola spesifik yang dicari, sistem akan langsung memberikan sinyal aktif pada jalur output untuk menandakan bahwa pola sasaran telah ditemukan. 
+
 ## FSM
 <img width="553" height="467" alt="FSM" src="https://github.com/user-attachments/assets/7a04f8e0-c557-45f0-a80d-d11695a6b439" />
+
 ## Desain Rangkaian 
 <img width="742" height="253" alt="Screenshot 2026-01-05 091707" src="https://github.com/user-attachments/assets/9adb8467-8dd4-4ef2-bab1-a65496c3d40f" />
+
+# Hasil Simulasi dan Analisis
+![sm](https://github.com/user-attachments/assets/78f334c0-c1cc-437f-a855-3d9c6efbc987)
+
+Gambar gelombang sinyal hasil testbench adalah bukti visual bahwa logika kode Verilog bekerja dengan baik. Sequence bit input yang digunakan adalah 0101101001 tergambar pada gambar di atas. Ketika terdeteksi input merupakan 001 atau 101, maka nilai output akan mengeluarkan 1 seperti pada gambar. 
+
+# Lampiran Kode Verilog
+## kode Verilog Base
+![vv](https://github.com/user-attachments/assets/a16b2515-98a7-411e-8c6f-89989a93339b)
+
+## Kode Verilog Test Bench
+![tb](https://github.com/user-attachments/assets/06798393-8eb7-4d6e-8910-f4fec075973c)
