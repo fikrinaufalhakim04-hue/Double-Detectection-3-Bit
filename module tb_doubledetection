@@ -12,6 +12,11 @@ module tb_doubledetection;
         .y(y)
     );
 
+	 initial begin
+        clk = 0;
+        forever #5 clk = ~clk;
+    end
+	 
     initial begin
         clk   = 0;
         reset = 1;
