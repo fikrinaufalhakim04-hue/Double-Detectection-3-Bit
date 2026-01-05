@@ -35,13 +35,15 @@ Blok diagram tersebut menggambarkan implementasi sistem pendeteksi urutan sequen
 <img width="742" height="253" alt="Screenshot 2026-01-05 091707" src="https://github.com/user-attachments/assets/9adb8467-8dd4-4ef2-bab1-a65496c3d40f" />
 
 # Hasil Simulasi dan Analisis
-![sm](https://github.com/user-attachments/assets/78f334c0-c1cc-437f-a855-3d9c6efbc987)
+
+![sm3](https://github.com/user-attachments/assets/0b85c56a-f93e-4d7f-8087-7e8c4f943125)
 
 Gambar gelombang sinyal hasil testbench adalah bukti visual bahwa logika kode Verilog bekerja dengan baik. Sequence bit input yang digunakan adalah 0101101001 tergambar pada gambar di atas. Ketika terdeteksi input merupakan 001 atau 101, maka nilai output akan mengeluarkan 1 seperti pada gambar. 
 
 # Lampiran Kode Verilog
 ## kode Verilog Base
-![vv](https://github.com/user-attachments/assets/a16b2515-98a7-411e-8c6f-89989a93339b)
+![vv3](https://github.com/user-attachments/assets/58e4996f-3e57-4961-807e-01e0effd3011)
 
 ## Kode Verilog Test Bench
-![tb](https://github.com/user-attachments/assets/06798393-8eb7-4d6e-8910-f4fec075973c)
+![tbb](https://github.com/user-attachments/assets/fae53e29-8cbb-42b2-b617-90cab6a7ba9c)
+
