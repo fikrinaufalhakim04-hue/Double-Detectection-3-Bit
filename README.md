@@ -29,7 +29,7 @@ Flowchart menggambarkan alur kerja sistem pendeteksi pola bit 3-bit (001 dan 101
 Blok diagram tersebut menggambarkan implementasi sistem pendeteksi urutan sequence detector pada perangkat keras FPGA, di mana data biner diterima bit demi bit melalui input dan diproses oleh logika state machine internal modul double detection 3-bit. FPGA bertugas memantau aliran data ini secara real-time menggunakan register internalnya, dan ketika rangkaian bit yang masuk cocok dengan pola spesifik yang dicari, sistem akan langsung memberikan sinyal aktif pada jalur output untuk menandakan bahwa pola sasaran telah ditemukan. 
 
 ## FSM
-<img width="553" height="467" alt="FSM" src="https://github.com/user-attachments/assets/7a04f8e0-c557-45f0-a80d-d11695a6b439" />
+![fs](https://github.com/user-attachments/assets/4c819b0b-d199-434d-9bc0-7065facfa523)
 
 ## Desain Rangkaian 
 <img width="742" height="253" alt="Screenshot 2026-01-05 091707" src="https://github.com/user-attachments/assets/9adb8467-8dd4-4ef2-bab1-a65496c3d40f" />
