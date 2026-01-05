@@ -24,7 +24,7 @@ Tugas besar ini bertujuan untuk merancang dan mengimplementasikan sebuah sistem 
 Flowchart menggambarkan alur kerja sistem pendeteksi pola bit 3-bit (001 dan 101) berbasis FSM Mealy. Sistem membaca input bit serial secara kontinu, memproses setiap bit untuk menentukan transisi state, dan menghasilkan output logika 1 ketika salah satu pola terdeteksi. Proses overlapping diterapkan sehingga bit sebelumnya dapat digunakan kembali untuk deteksi selanjutnya, dan sistem berjalan terus selama clock aktif. 
 
 ## Blok Diagram
-![blok dd](https://github.com/user-attachments/assets/76b46c2c-52d5-426f-bd18-2d617bb0037b)
+![blok](https://github.com/user-attachments/assets/44b51cd5-25b2-464c-8f4b-adc1ebaeb15a)
 
 Blok diagram tersebut menggambarkan implementasi sistem pendeteksi urutan sequence detector pada perangkat keras FPGA, di mana data biner diterima bit demi bit melalui input dan diproses oleh logika state machine internal modul double detection 3-bit. FPGA bertugas memantau aliran data ini secara real-time menggunakan register internalnya, dan ketika rangkaian bit yang masuk cocok dengan pola spesifik yang dicari, sistem akan langsung memberikan sinyal aktif pada jalur output untuk menandakan bahwa pola sasaran telah ditemukan. 
 
