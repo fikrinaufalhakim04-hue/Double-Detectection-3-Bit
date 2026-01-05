@@ -1,0 +1,36 @@
+module tb_doubledetection;
+
+    reg clk;
+    reg reset;
+    reg x;
+    wire y;
+
+    doubledetection dut (
+        .clk(clk),
+        .reset(reset),
+        .x(x),
+        .y(y)
+    );
+
+    initial begin
+        clk   = 0;
+        reset = 1;
+        x     = 0;
+
+        #10;
+        reset = 0;
+
+        #10 x = 1;
+        #10 x = 0;
+        #10 x = 1;
+        #10 x = 1;
+        #10 x = 0;
+        #10 x = 1;
+        #10 x = 0;
+        #10 x = 0;
+        #10 x = 1;
+
+        #50;
+        $finish;
+    end
+endmodule
