@@ -47,3 +47,6 @@ Gambar gelombang sinyal hasil testbench adalah bukti visual bahwa logika kode Ve
 ## Kode Verilog Test Bench
 ![tbb](https://github.com/user-attachments/assets/fae53e29-8cbb-42b2-b617-90cab6a7ba9c)
 
+## Link Video
+https://youtu.be/3pQ36dui9Dc?si=VmMxrVZCCWSn7j7r
+
